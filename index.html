@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>巡工房 - 自然派アロマ注文ページ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo">巡工房</h1>
+    <nav>
+      <ul>
+        <li><a href="#products">商品紹介</a></li>
+        <li><a href="#order">ご注文</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>自然の恵みで、心と体に癒しを。</h2>
+      <p>アロマと自然素材にこだわった、巡工房の精油をお届けします。</p>
+      <div class="line-campaign">
+        <span>🌿 公式LINEからのお申し込みで<strong>送料無料！</strong> 🌿</span>
+      </div>
+    </section>
+    <section id="products" class="products">
+      <h3>商品紹介</h3>
+      <div class="product-list">
+        <div class="product">
+          <img src="images/lavender.jpg" alt="ラベンダー精油" class="product-img">
+          <h4>ラベンダー精油</h4>
+          <p>リラックス効果抜群。安眠やストレス緩和に。</p>
+        </div>
+        <div class="product">
+          <img src="images/eucalyptus.jpg" alt="ユーカリレモン精油" class="product-img">
+          <h4>ユーカリレモン精油</h4>
+          <p>爽やかな香りでリフレッシュ。空気清浄や虫除けにも。</p>
+        </div>
+        <div class="product">
+          <img src="images/blend.jpg" alt="ブレンド精油" class="product-img">
+          <h4>ブレンド精油</h4>
+          <p>巡工房オリジナル。季節や気分に合わせた特別な香り。</p>
+        </div>
+      </div>
+    </section>
+    <section id="order" class="order-form">
+      <h3>ご注文フォーム</h3>
+      <form id="orderForm">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" required>
+        <label for="product">ご希望の商品</label>
+        <select id="product" name="product" required>
+          <option value="ラベンダー精油">ラベンダー精油</option>
+          <option value="ユーカリレモン精油">ユーカリレモン精油</option>
+          <option value="ブレンド精油">ブレンド精油</option>
+        </select>
+        <label for="quantity">数量</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+        <label for="payment">お支払い方法</label>
+        <select id="payment" name="payment" required>
+          <option value="PayPay">PayPay</option>
+          <option value="クレジットカード">クレジットカード</option>
+          <option value="銀行振込">銀行振込</option>
+          <option value="店頭受け取り">店頭受け取り</option>
+        </select>
+        <label for="message">備考</label>
+        <textarea id="message" name="message" rows="3"></textarea>
+        <button type="submit">送信</button>
+      </form>
+      <div class="form-note">
+        <p>※ 公式LINEからのお申し込みで送料無料となります。<br>LINEの友だち追加は<a href="#">こちら</a>。</p>
+        <div class="line-banner">
+          <a href="#" target="_blank" rel="noopener">
+            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="LINEで友だち追加" style="height:40px;">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>お問い合わせ：info@jun-koubou.jp</p>
+    <p>公式LINE・Instagramもぜひご覧ください。</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 
